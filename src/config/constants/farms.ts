@@ -83,6 +83,70 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
+  // {
+  //   pid: 5,
+  //   risk: 5,
+  //   lpSymbol: 'WINE-BTCB',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x9D8f01F3eFEE538ad22107fC56575Caf4c28BBD2', // WINE-BTCB LP
+  //   },
+  //   tokenSymbol: 'WINE',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.WINE,
+  //   quoteTokenAdresses: contracts.wine,
+  // },
+  // {
+  //   pid: 6,
+  //   risk: 5,
+  //   lpSymbol: 'WINE-USDT',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x8B947135D333A0C4dAd3625Dc04d5B3e21687530', // WINE-USDT LP
+  //   },
+  //   tokenSymbol: 'WINE',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.WINE,
+  //   quoteTokenAdresses: contracts.wine,
+  // },
+  // {
+  //   pid: 7,
+  //   risk: 5,
+  //   lpSymbol: 'WINE-USDC',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-USDC LP
+  //   },
+  //   tokenSymbol: 'WINE',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.WINE,
+  //   quoteTokenAdresses: contracts.wine,
+  // },
+  // {
+  //   pid: 8,
+  //   risk: 5,
+  //   lpSymbol: 'WINE-ETH',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-ETH LP
+  //   },
+  //   tokenSymbol: 'WINE',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.WINE,
+  //   quoteTokenAdresses: contracts.wine,
+  // },
 ]
 
 export default farms
