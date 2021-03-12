@@ -83,70 +83,70 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // {
-  //   pid: 5,
-  //   risk: 5,
-  //   lpSymbol: 'WINE-BTCB',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x9D8f01F3eFEE538ad22107fC56575Caf4c28BBD2', // WINE-BTCB LP
-  //   },
-  //   tokenSymbol: 'WINE',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.WINE,
-  //   quoteTokenAdresses: contracts.wine,
-  // },
-  // {
-  //   pid: 6,
-  //   risk: 5,
-  //   lpSymbol: 'WINE-USDT',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x8B947135D333A0C4dAd3625Dc04d5B3e21687530', // WINE-USDT LP
-  //   },
-  //   tokenSymbol: 'WINE',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.WINE,
-  //   quoteTokenAdresses: contracts.wine,
-  // },
-  // {
-  //   pid: 7,
-  //   risk: 5,
-  //   lpSymbol: 'WINE-USDC',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-USDC LP
-  //   },
-  //   tokenSymbol: 'WINE',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.WINE,
-  //   quoteTokenAdresses: contracts.wine,
-  // },
-  // {
-  //   pid: 8,
-  //   risk: 5,
-  //   lpSymbol: 'WINE-ETH',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-ETH LP
-  //   },
-  //   tokenSymbol: 'WINE',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.WINE,
-  //   quoteTokenAdresses: contracts.wine,
-  // },
+  {
+    pid: 5,
+    risk: 5,
+    lpSymbol: 'WINE-BTCB',
+    lpAddresses: {
+      97: '',
+      56: '0x9D8f01F3eFEE538ad22107fC56575Caf4c28BBD2', // WINE-BTCB LP
+    },
+    tokenSymbol: 'WINE',
+    tokenAddresses: {
+      97: '',
+      56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+    },
+    quoteTokenSymbol: QuoteToken.WINE,
+    quoteTokenAdresses: contracts.wine,
+  },
+  {
+    pid: 6,
+    risk: 5,
+    lpSymbol: 'WINE-USDT',
+    lpAddresses: {
+      97: '',
+      56: '0x8B947135D333A0C4dAd3625Dc04d5B3e21687530', // WINE-USDT LP
+    },
+    tokenSymbol: 'WINE',
+    tokenAddresses: {
+      97: '',
+      56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+    },
+    quoteTokenSymbol: QuoteToken.WINE,
+    quoteTokenAdresses: contracts.wine,
+  },
+  {
+    pid: 7,
+    risk: 5,
+    lpSymbol: 'WINE-USDC',
+    lpAddresses: {
+      97: '',
+      56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-USDC LP
+    },
+    tokenSymbol: 'WINE',
+    tokenAddresses: {
+      97: '',
+      56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+    },
+    quoteTokenSymbol: QuoteToken.WINE,
+    quoteTokenAdresses: contracts.wine,
+  },
+  {
+    pid: 8,
+    risk: 5,
+    lpSymbol: 'WINE-ETH',
+    lpAddresses: {
+      97: '',
+      56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-ETH LP
+    },
+    tokenSymbol: 'WINE',
+    tokenAddresses: {
+      97: '',
+      56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
+    },
+    quoteTokenSymbol: QuoteToken.WINE,
+    quoteTokenAdresses: contracts.wine,
+  },
   {
     pid: 9,
     risk: 5,
@@ -226,6 +226,39 @@ const farms: FarmConfig[] = [
     tokenAddresses: {
       97: '',
       56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 14,
+    risk: 2,
+    lpSymbol: 'BTCB-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x7561eee90e24f3b348e1087a005f78b4c8453524',
+    },
+    tokenSymbol: 'BTCB',
+    tokenAddresses: {
+      97: '',
+      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 15,
+    risk: 2,
+    isTokenOnly: true,
+    lpSymbol: 'BTCB',
+    lpAddresses: {
+      97: '',
+      56: '0xb8875e207ee8096a929d543c9981c9586992eacb', // BTCB-BUSD LP
+    },
+    tokenSymbol: 'BTCB',
+    tokenAddresses: {
+      97: '',
+      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
