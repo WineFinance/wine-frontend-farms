@@ -85,7 +85,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
         let apy = cakePrice.times(cakeRewardPerYear);
         if (farm.quoteTokenSymbol === QuoteToken.WINE) {
-          apy = cakePrice.times(cakeRewardPerYear);
+          apy = cakePrice.times(cakeRewardPerMonth);
         }
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0);
 

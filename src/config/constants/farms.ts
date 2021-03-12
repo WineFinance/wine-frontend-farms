@@ -137,7 +137,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WINE-ETH',
     lpAddresses: {
       97: '',
-      56: '0xd012e29f1A933De9fa2914fFE44245EE950a85D3', // WINE-ETH LP
+      56: '0x522d3363Aef8FEc1CA4c242010e71a98AaEA7b03', // WINE-ETH LP
     },
     tokenSymbol: 'WINE',
     tokenAddresses: {
@@ -205,7 +205,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x975b0A200e212109A7cCFB1aa4A15BF314369036', // WINE-BUSD LP
     },
-    tokenSymbol: 'EGG',
+    tokenSymbol: 'WINE',
     tokenAddresses: {
       97: '',
       56: '0x09eb8438451c1C617b6051EED015db988af6Df2A',
@@ -259,6 +259,86 @@ const farms: FarmConfig[] = [
     tokenAddresses: {
       97: '',
       56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 16,
+    risk: 5,
+    lpSymbol: 'XVS-BNB LP',
+    lpAddresses: {
+      97: '0xE66790075ad839978fEBa15D4d8bB2b415556a1D',
+      56: '0x41182c32F854dd97bA0e0B1816022e0aCB2fc0bb',
+    },
+    tokenSymbol: 'XVS',
+    tokenAddresses: {
+      97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+      56: '0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 17,
+    risk: 5,
+    lpSymbol: 'REEF-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x58B58cab6C5cF158f63A2390b817710826d116D0',
+    },
+    tokenSymbol: 'REEF',
+    tokenAddresses: {
+      97: '',
+      56: '0xf21768ccbc73ea5b6fd3c687208a7c2def2d966e',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 18,
+    risk: 5,
+    lpSymbol: 'HARD-BNB LP',
+    lpAddresses: {
+      97: '0xE66790075ad839978fEBa15D4d8bB2b415556a1D',
+      56: '0x9f40e8a2fcaa267a0c374b6c661e0b372264cc3d',
+    },
+    tokenSymbol: 'HARD',
+    tokenAddresses: {
+      97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
+      56: '0xf79037f6f6be66832de4e7516be52826bc3cbcc4',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 19,
+    risk: 5,
+    lpSymbol: 'DODO-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x9e642d174b14faea31d842dc83037c42b53236e6',
+    },
+    tokenSymbol: 'DODO',
+    tokenAddresses: {
+      97: '',
+      56: '0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    pid: 20,
+    risk: 1,
+    lpSymbol: 'USDT-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0xc15fa3e22c912a276550f3e5fe3b0deb87b55acd',
+    },
+    tokenSymbol: 'USDT',
+    tokenAddresses: {
+      97: '',
+      56: '0x55d398326f99059ff775485246999027b3197955',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
