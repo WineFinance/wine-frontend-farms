@@ -59,44 +59,6 @@ const Cards = styled(BaseLayout)`
 const Home: React.FC = () => {
   
   const TranslateString = useI18n()
-  const Completionist = () => <span>New Farms Are Loading!</span>;
-  const launchTime = Date.UTC(2021, 2, 12, 18, 0) - Date.now()
-  const RenderTime = ({ remainingTime }) => {
-    const currentTime = useRef(remainingTime);
-    const prevTime = useRef(null);
-    const isNewTimeFirstTick = useRef(false);
-    const [, setOneLastRerender] = useState(0);
-  
-    if (currentTime.current !== remainingTime) {
-      isNewTimeFirstTick.current = true;
-      prevTime.current = currentTime.current;
-      currentTime.current = remainingTime;
-    } else {
-      isNewTimeFirstTick.current = false;
-    }
-  
-    // force one last re-render when the time is over to tirgger the last animation
-    if (remainingTime === 0) {
-      setTimeout(() => {
-        setOneLastRerender(val => val + 1);
-      }, 20);
-    }
-  
-    const isTimeUp = isNewTimeFirstTick.current;
-  
-    return (
-      <div className="time-wrapper">
-        <div key={remainingTime} className={`time ${isTimeUp ? "up" : ""}`}>
-          {remainingTime} Seconds
-        </div>
-        {remainingTime === 0 && (
-          <div>
-            Farms are loading !
-          </div>
-        )}
-      </div>
-    );
-  };
   
   return (
     <Page>
@@ -106,16 +68,6 @@ const Home: React.FC = () => {
         </Heading>
         <Text>{TranslateString(578, 'The only yield farm for wine lovers.')}</Text>
       </Hero>
-      <Text><div style={{ fontSize: "32px",textAlign: "center", margin: 'auto', alignItems: 'center', display: 'flex', justifyContent: 'center',}} >Farms will be unlocked in (UTC 03/12/2021 18:00) </div></Text>
-        <div style={{ textAlign: "center", margin: 'auto', alignItems: 'center', display: 'flex', justifyContent: 'center',}}>
-          <div style={{ fontSize: "67px" }}>
-            <Countdown date= {Date.now() + launchTime } >
-              <Completionist />
-            </Countdown>
-          </div>
-        </div>
-        <div style={{ fontSize: "1px",textAlign: "center", margin: 'auto', alignItems: 'center', display: 'flex', justifyContent: 'center',}} ><Text> .</Text></div>
-        <div style={{ fontSize: "1px",textAlign: "center", margin: 'auto', alignItems: 'center', display: 'flex', justifyContent: 'center',}}><Text> .</Text></div>
       <div>
         <Cards>
           <FarmStakingCard />
