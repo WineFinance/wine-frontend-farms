@@ -153,7 +153,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BNB-BUSD',
     lpAddresses: {
       97: '',
-      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // BNB-BUSD LP
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // WINE-ETH LP
     },
     tokenSymbol: 'BNB',
     tokenAddresses: {
@@ -162,6 +162,38 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
+  },
+ {
+    pid: 10,
+    risk: 4,
+    lpSymbol: 'CAKE-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458',
+    },
+    tokenSymbol: 'CAKE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 11,
+    risk: 4,
+    lpSymbol: 'CAKE-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xa527a61703d82139f8a06bc30097cc9caa2df5a6',
+    },
+    tokenSymbol: 'CAKE',
+    tokenAddresses: {
+      97: '',
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 ]
 
